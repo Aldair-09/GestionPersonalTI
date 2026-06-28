@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Carlos Pérez",
+        "cargo": "Administrador de Red",
+        "correo": "carlos@empresa.com",
+        "estado": "Disponible"
+    },
+    {
+        "id": 2,
+        "nombre": "María López",
+        "cargo": "Soporte Técnico",
+        "correo": "maria@empresa.com",
+        "estado": "Ocupado"
+    },
+    {
+        "id": 3,
+        "nombre": "José Ramírez",
+        "cargo": "Administrador de Servidores",
+        "correo": "jose@empresa.com",
+        "estado": "Disponible"
+    },
+    {
+        "id": 4,
+        "nombre": "Ana Torres",
+        "cargo": "Técnico de Redes",
+        "correo": "ana@empresa.com",
+        "estado": "Disponible"
+    }
+]
