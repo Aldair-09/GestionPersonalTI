@@ -1,5 +1,12 @@
-ID,Nombre,Cargo,Correo,Estado
-1,Carlos Pérez,Administrador de Red,carlos@empresa.com,Disponible
-2,María López,Soporte Técnico,maria@empresa.com,Ocupado
-3,José Ramírez,Administrador de Servidores,jose@empresa.com,Disponible
-4,Ana Torres,Técnico de Redes,ana@empresa.com,Disponible
+ID,Nombre,Cargo,Correo,Ciudad,Estado
+1,Jhon Pérez,Administrador de Red,jhon.perez@gestionti.pe,Lima,Disponible
+2,Melody Ramos,Soporte Técnico,melody.ramos@gestionti.pe,Arequipa,Ocupado
+3,Angie Torres,Técnico de Redes,angie.torres@gestionti.pe,Cusco,Disponible
+4,Raquel Flores,Administradora de Servidores,raquel.flores@gestionti.pe,Trujillo,Disponible
+5,Sandra Quispe,Especialista en Seguridad,sandra.quispe@gestionti.pe,Piura,Ocupado
+6,Sofía Mendoza,Analista de Sistemas,sofia.mendoza@gestionti.pe,Chiclayo,Disponible
+7,Almanza Rojas,Administrador de Base de Datos,almanza.rojas@gestionti.pe,Huancayo,Disponible
+8,Bossio Salazar,Coordinador de TI,bossio.salazar@gestionti.pe,Tacna,Ocupado
+9,Keiko Medina,Ingeniera de Infraestructura,keiko.medina@gestionti.pe,Iquitos,Disponible
+10,Luis Huamán,Administrador de Redes,luis.huaman@gestionti.pe,Pucallpa,Disponible
+11,Carlos Castillo,Soporte TI,carlos.castillo@gestionti.pe,Lima,Ocupado

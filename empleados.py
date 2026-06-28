@@ -64,29 +64,47 @@ def obtener_empleados_api():
 
 def exportar_csv():
 
-    with open("reportes/empleados.csv", "w", newline="", encoding="utf-8") as archivo:
+    url = "https://6a40ba581ff1d27becc0eb5c.mockapi.io/empleados"
 
-        escritor = csv.writer(archivo)
+    try:
+        respuesta = requests.get(url)
 
-        escritor.writerow([
-            "ID",
-            "Nombre",
-            "Cargo",
-            "Correo",
-            "Estado"
-        ])
+        if respuesta.status_code == 200:
 
-        for empleado in empleados:
-            escritor.writerow([
-                empleado["id"],
-                empleado["nombre"],
-                empleado["cargo"],
-                empleado["correo"],
-                empleado["estado"]
-            ])
+            usuarios = respuesta.json()
 
-    print("\n✅ Reporte generado correctamente.")
-    print("Ubicación: reportes/empleados.csv")
+            with open("reportes/empleados.csv", "w", newline="", encoding="utf-8") as archivo:
+
+                escritor = csv.writer(archivo)
+
+                escritor.writerow([
+                    "ID",
+                    "Nombre",
+                    "Cargo",
+                    "Correo",
+                    "Ciudad",
+                    "Estado"
+                ])
+
+                for usuario in usuarios:
+
+                    escritor.writerow([
+                        usuario.get("id", usuario.get("ID", "")),
+                        usuario["nombre"],
+                        usuario["cargo"],
+                        usuario["correo"],
+                        usuario["ciudad"],
+                        usuario["estado"]
+                    ])
+
+            print("\n✅ Reporte CSV generado correctamente.")
+            print("Ubicación: reportes/empleados.csv")
+
+        else:
+            print("No fue posible obtener los datos de la API.")
+
+    except Exception as e:
+        print("Error al exportar el CSV:", e)
 while True:
 
     print("\n==============================")
